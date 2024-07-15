@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <img
               src="/about.jpg"
               alt="About Us"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg "
             />
           </div>
           <div>
