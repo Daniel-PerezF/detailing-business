@@ -1,7 +1,7 @@
 const About: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center py-10">
-      <div className="bg-white shadow-lg rounded-lg px-8 max-w-4xl w-full py-8">
+      <div className="bg-white shadow-lg rounded-lg px-8 max-w-6xl w-full py-8">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           About Us
         </h1>
