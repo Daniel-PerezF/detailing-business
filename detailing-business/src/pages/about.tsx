@@ -9,7 +9,7 @@ const About: React.FC = () => {
           {" "}
           <div className="flex items-center justify-center max-w-full">
             <img
-              src="/vite.svg"
+              src="/about.jpg"
               alt="About Us"
               className="rounded-lg shadow-lg"
             />
