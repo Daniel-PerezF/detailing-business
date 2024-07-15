@@ -10,15 +10,15 @@ function App() {
   return (
     <div className="bg-gray-200">
       <Nav />
-      <div className="px-10">
+      <div className="px-6">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
-      </div>
+      </div>{" "}
+      <Footer />
     </div>
   );
 }

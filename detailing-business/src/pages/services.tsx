@@ -55,8 +55,8 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-5 flex flex-col items-center">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-4xl w-full mt-10">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center">
+      <div className="bg-gray-100 shadow-lg rounded-lg py-8 max-w-4xl w-full mt-10">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Our Services
         </h1>

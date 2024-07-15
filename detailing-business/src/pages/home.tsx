@@ -6,15 +6,17 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-20">
-        <div className="container mx-auto px-6 text-center">
+
+      <section className="relative bg-cover bg-center text-white py-20">
+        <div className="absolute inset-0 bg-[#30362F] bg-opacity-60 "></div>
+        <div className="relative container mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold mb-4">Premium Car Detailing</h1>
           <p className="text-xl mb-8">
             Professional care for your car, inside and out.
           </p>
           <a
             href="/contact"
-            className="bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100"
+            className="bg-white text-[#30362F] font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100"
           >
             Book an Appointment
           </a>
@@ -23,7 +25,7 @@ const Home: React.FC = () => {
 
       {/* Services Section */}
       <section className="py-20">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto  text-center">
           <h2 className="text-3xl font-bold mb-12">Our Services</h2>
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-1/3 p-6">
@@ -61,6 +63,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
       {/* About Section */}
       <section className="bg-gray-200 py-20">
         <div className="container mx-auto px-6 text-center">

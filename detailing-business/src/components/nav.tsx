@@ -24,11 +24,12 @@ export default function Nav() {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 flex justify-between w-full px-4 pt-2 mb-2 z-30 bg-white shadow-md">
+    <nav className="sticky top-0 flex justify-between w-full px-4 pt-2 mb-2 z-30 bg-white/95 shadow-md">
       <Link to="/" onClick={closeMenu} className="z-20 pt-2 lg:pt-4 pb-1">
         <div className="flex gap-2">
-          <div className="font-extrabold text-[40px] lg:text-5xl tracking-tighter hover:scale-105 duration-200 ease-in-out">
-            LOGO
+          <div className="font-extrabold text-3xl tracking-tighter leading-10 hover:scale-105 duration-200 ease-in-out py-1">
+            Prestige
+            <br className="block lg:hidden" /> Detailing
           </div>
         </div>
       </Link>
@@ -99,7 +100,7 @@ export default function Nav() {
                     Contact
                   </Link>
                 </li>
-                <li className="text-center px-8 py-1 rounded-full mt-4 duration-200 ease-in-out cursor-pointer bg-blue-400 text-white">
+                <li className="text-center px-8 py-1 rounded-full mt-4 duration-200 ease-in-out cursor-pointer bg-[#AAAE7F] text-white">
                   <a href="/contact" rel="noreferrer noopener">
                     Book Now
                   </a>
@@ -109,7 +110,7 @@ export default function Nav() {
           </>
         )}
       </AnimatePresence>
-      <ul className="hidden lg:flex gap-5 text-2xl font-medium pt-4 ">
+      <ul className="hidden lg:flex gap-5 text-2xl font-medium pt-4 items-centers">
         <li>
           <Link
             to="/"
@@ -158,7 +159,7 @@ export default function Nav() {
             Contact
           </Link>
         </li>
-        <li className="duration-200 ease-in-out rounded-full text-lg w-28 h-8 text-center flex items-center justify-center border bg-blue-400 text-white">
+        <li className="duration-200 ease-in-out rounded-full text-lg w-28 h-8 text-center flex items-center justify-center border bg-[#AAAE7F] text-white">
           <Link to="/contact">Book Now</Link>
         </li>
       </ul>
