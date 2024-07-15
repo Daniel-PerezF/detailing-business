@@ -87,7 +87,7 @@ const ReviewsCarousel: React.FC = () => {
       <Slider {...settings}>
         {reviews.map((review) => (
           <div key={review.id} className="p-4 flex justify-center items-center">
-            <div className="bg-white shadow-lg rounded-lg p-6 w-full flex flex-col justify-center items-center h-72">
+            <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full flex flex-col justify-center items-center h-72">
               <p className="text-xl font-semibold mb-2 text-center text-gray-800">
                 {review.name}
               </p>

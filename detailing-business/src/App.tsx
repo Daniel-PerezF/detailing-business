@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 font-lato">
       <Nav />
       <div className="px-6">
         <Routes>
