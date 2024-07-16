@@ -55,7 +55,7 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   const { ref: servicesRef, inView: servicesInView } = useInView({
-    threshold: 0.5,
+    threshold: 0.4,
   });
 
   return (
