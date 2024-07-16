@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-3 mt-16 flex flex-col font-light bg-[#30362F] text-white">
+    <footer className="py-3 flex flex-col font-light from-[#40494F] to-[#5E6973] bg-gradient-to-tr text-white">
       <div className="flex justify-center gap-3 items-center font-extrabold text-3xl tracking-tighter pb-4">
         <div>Prestige Detailing</div>
       </div>

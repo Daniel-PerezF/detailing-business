@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="font-lato bg-gradient-to-tr from-slate-400 to-slate-200">
+    <div className="font-lato bg-gradient-to-tr from-[#D6D6D6] to-[#F2F2F2]">
       <Nav />
       <div className="">
         <Routes>

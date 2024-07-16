@@ -1,7 +1,7 @@
 const Contact: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-6xl w-full mt-10">
+    <div className="min-h-screen flex flex-col items-center py-5">
+      <div className="bg-white shadow-lg  p-8 max-w-6xl w-full ">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Contact Us
         </h1>
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#F17F29]"
                   placeholder="Your Name"
                   required
                 />
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#F17F29]"
                   placeholder="Your Email"
                   required
                 />
@@ -58,14 +58,14 @@ const Contact: React.FC = () => {
                   id="message"
                   name="message"
                   rows={4}
-                  className="py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                  className="py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#F17F29]"
                   placeholder="Your Message"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300"
+                className="py-2 px-4 bg-[#F17F29] text-white rounded-md  transition duration-300"
               >
                 Send Message
               </button>
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="h-6 w-6 text-blue-500"
+                className="h-6 w-6 text-[#F17F29]"
               >
                 <path
                   strokeLinecap="round"
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="h-6 w-6 text-blue-500"
+                className="h-6 w-6 text-[#F17F29]"
               >
                 <path
                   strokeLinecap="round"
@@ -125,7 +125,7 @@ const Contact: React.FC = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="h-6 w-6 text-blue-500"
+                className="h-6 w-6 text-[#F17F29]"
               >
                 <path
                   strokeLinecap="round"
