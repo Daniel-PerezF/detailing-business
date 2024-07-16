@@ -23,6 +23,14 @@ export default function Nav() {
     };
   }, [isOpen]);
 
+  const scrollToTop = () => {
+    const scrollOptions: ScrollToOptions = {
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    };
+    window.scrollTo(scrollOptions);
+  };
   return (
     <nav className="sticky md:relative top-0 flex justify-between w-full px-4 z-30 from-[#40494F]/95 to-[#5E6973]/95 bg-gradient-to-tr  shadow-md">
       <Link to="/" onClick={closeMenu} className="z-20 pt-2 lg:pt-4 pb-1">
@@ -32,6 +40,7 @@ export default function Nav() {
               src="/perstige-2.png"
               alt=""
               className="h-16 my-3 md:pb-2 md:my-0"
+              onClick={scrollToTop}
             />
           </div>
         </div>

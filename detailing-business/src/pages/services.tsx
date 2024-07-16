@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaCar,
   FaWrench,
@@ -8,8 +7,7 @@ import {
   FaPaintRoller,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import useInView from "../components/use-in-view"; // Adjust the path as per your file structure
-
+import useInView from "../components/use-in-view";
 interface Service {
   title: string;
   description: string;

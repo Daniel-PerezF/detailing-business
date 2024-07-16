@@ -1,5 +1,3 @@
-// src/pages/Homepage.tsx
-import React from "react";
 import { motion } from "framer-motion";
 import ReviewsCarousel from "../components/reviews-carousel";
 import {
@@ -92,7 +90,6 @@ const Home: React.FC = () => {
             </motion.a>
           </div>
         </section>
-
         {/* Services Section */}
         <section className="py-10 bg-white px-4" ref={servicesRef}>
           <div className="container mx-auto text-center">

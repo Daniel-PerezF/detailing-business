@@ -1,6 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import useInView from "../components/use-in-view"; // Adjust the path as per your file structure
+import useInView from "../components/use-in-view";
 
 const Contact: React.FC = () => {
   const { ref: contactRef, inView: contactInView } = useInView({

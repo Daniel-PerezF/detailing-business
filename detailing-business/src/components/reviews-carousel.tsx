@@ -1,4 +1,3 @@
-// src/components/ReviewsCarousel.tsx
 import React from "react";
 import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
