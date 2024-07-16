@@ -4,12 +4,12 @@ import ReviewsCarousel from "../components/reviews-carousel";
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center py-10">
-      <div className="bg-white shadow-lg rounded-lg px-8 max-w-6xl w-full py-8">
+    <div className="min-h-screen flex flex-col items-center ">
+      <div className="   max-w-6xl w-full ">
         {/* Hero Section */}
 
         <section className="relative bg-cover bg-center text-white py-20">
-          <div className="absolute inset-0 bg-[#30362F] bg-opacity-60 rounded-lg"></div>
+          <div className="absolute inset-0 bg-[#30362F] bg-opacity-60"></div>
           <div className="relative container mx-auto px-6 text-center">
             <h1 className="text-5xl font-bold mb-4">Premium Car Detailing</h1>
             <p className="text-xl mb-8">
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-10 rounded-lg bg-white">
+        <section className="py-10  ">
           <div className="container mx-auto  text-center">
             <h2 className="text-3xl font-bold mb-12">Our Services</h2>
             <div className="flex flex-wrap justify-center">
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* About Section */}
-        <section className="bg-white rounded-lg py-10 ">
+        <section className="  py-10 ">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-12">About Us</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-10 bg-white rounded-lg">
+        <section className="py-10 bg-white ">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-12">What Our Clients Say</h2>
             <ReviewsCarousel />
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
               today!
             </p>
             <a
-              href="mailto:info@premiumcardetailing.com"
+              href="mailto:contact@prestigedetailing.com"
               className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700"
             >
               Email Us

@@ -24,16 +24,16 @@ export default function Nav() {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 flex justify-between w-full px-4 pt-2 mb-2 z-30 bg-white/95 shadow-md">
+    <nav className="sticky top-0 flex justify-between w-full px-4 pt-2  z-30 bg-[#2C343A]/95 shadow-md">
       <Link to="/" onClick={closeMenu} className="z-20 pt-2 lg:pt-4 pb-1">
         <div className="flex gap-2">
-          <div className="font-extrabold text-3xl tracking-tighter leading-10 hover:scale-105 duration-200 ease-in-out py-1">
+          <div className="text-white font-extrabold text-4xl leading-10 hover:scale-105 duration-200 ease-in-out py-1 font-rubik ">
             Prestige
             <br className="block lg:hidden" /> Detailing
           </div>
         </div>
       </Link>
-      <div className="lg:hidden flex self-end z-10">
+      <div className="lg:hidden flex self-end z-10 text-white">
         <Slant toggled={isOpen} toggle={setIsOpen} />
       </div>
 
@@ -45,7 +45,7 @@ export default function Nav() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25 }}
-              className="fixed top-0 left-0 w-full h-full flex flex-col justify-between tracking-widest pt-24 shadow-lg bg-white "
+              className="fixed top-0 left-0 w-full h-full flex flex-col justify-between tracking-widest pt-32 shadow-lg bg-[#2E4756] text-white "
             >
               <ul className="grid grid-cols-1 w-full py-4 justify-items-center gap-10 font-medium text-3xl">
                 <li>

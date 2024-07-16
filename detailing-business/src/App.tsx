@@ -8,9 +8,9 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="bg-gray-200 font-lato">
+    <div className="font-lato bg-gradient-to-tr from-slate-400 to-slate-200">
       <Nav />
-      <div className="px-6">
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
