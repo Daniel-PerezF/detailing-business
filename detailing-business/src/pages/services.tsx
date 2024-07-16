@@ -55,12 +55,12 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   const { ref: servicesRef, inView: servicesInView } = useInView({
-    threshold: 0.4,
+    threshold: 0,
   });
 
   return (
     <div className="min-h-screen flex flex-col items-center py-5">
-      <div className="py-5 w-full px-4" ref={servicesRef}>
+      <div className="w-full px-4" ref={servicesRef}>
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Our Services
         </h1>
@@ -84,7 +84,13 @@ const Services: React.FC = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div>{" "}
+      <a
+        href="/contact"
+        className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md my-5"
+      >
+        Book Now!
+      </a>
     </div>
   );
 };

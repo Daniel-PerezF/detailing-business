@@ -5,11 +5,13 @@ import Services from "./pages/services";
 import Contact from "./pages/contact";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
+import ScrollOnLoad from "./components/scroll-on-load";
 
 function App() {
   return (
     <div className="font-lato bg-white">
       <Nav />
+      <ScrollOnLoad />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
