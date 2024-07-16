@@ -1,12 +1,28 @@
+import React from "react";
+import { motion } from "framer-motion";
+import useInView from "../components/use-in-view"; // Adjust the path as per your file structure
+
 const Contact: React.FC = () => {
+  const { ref: contactRef, inView: contactInView } = useInView({
+    threshold: 0.5,
+  });
+
   return (
     <div className="min-h-screen flex flex-col items-center py-5">
-      <div className="px-4 w-full ">
+      <div className="px-4 w-full " ref={contactRef}>
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Contact Us
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex flex-col">
+          <motion.div
+            className="flex flex-col"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{
+              opacity: contactInView ? 1 : 0,
+              x: contactInView ? 0 : -20,
+            }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className="text-2xl font-bold mb-2 text-gray-800">
               Get in Touch
             </h2>
@@ -65,13 +81,21 @@ const Contact: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="py-2 px-4 bg-[#F17F29] text-white rounded-md  transition duration-300"
+                className="py-2 px-4 bg-[#F17F29] text-white rounded-md transition duration-300"
               >
                 Send Message
               </button>
             </form>
-          </div>
-          <div className="flex flex-col space-y-4">
+          </motion.div>
+          <motion.div
+            className="flex flex-col space-y-4"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{
+              opacity: contactInView ? 1 : 0,
+              x: contactInView ? 0 : 20,
+            }}
+            transition={{ duration: 0.5 }}
+          >
             <div>
               <h2 className="text-2xl font-bold mb-2 text-gray-800">
                 Contact Information
@@ -136,7 +160,7 @@ const Contact: React.FC = () => {
                 contact@prestigedetailing.com
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

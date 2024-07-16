@@ -1,5 +1,6 @@
 // src/pages/Homepage.tsx
 import React from "react";
+import { motion } from "framer-motion";
 import ReviewsCarousel from "../components/reviews-carousel";
 import {
   FaCar,
@@ -7,6 +8,7 @@ import {
   FaPaintRoller,
   FaSprayCan,
 } from "react-icons/fa";
+import useInView from "../components/use-in-view";
 
 const Home: React.FC = () => {
   const services = [
@@ -35,39 +37,77 @@ const Home: React.FC = () => {
         "Detailed cleaning of the engine bay to keep it looking pristine.",
     },
   ];
+
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    threshold: 0.6,
+    once: true,
+  });
+  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({
+    threshold: 0.6,
+    once: true,
+  });
+  const { ref: contactRef, inView: contactInView } = useInView({
+    threshold: 0.6,
+    once: true,
+  });
+  const { ref: servicesRef, inView: servicesInView } = useInView({
+    threshold: 0.5,
+    once: true,
+  });
+
   return (
     <div className="min-h-screen flex flex-col items-center pb-5 ">
       <div className="w-full ">
         {/* Hero Section */}
-
         <section
           className="relative bg-cover bg-center text-white py-20"
           style={{ backgroundImage: "url(/car-img.jpg)", height: "800px" }}
         >
           <div className="absolute inset-0 bg-[#2C343A] bg-opacity-40"></div>
           <div className="relative container mx-auto px-6 text-center flex top-[25%] flex-col">
-            <h1 className="text-5xl font-bold mb-4">Premium Car Detailing</h1>
-            <p className="text-xl mb-8">
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-5xl font-bold mb-4"
+            >
+              Premium Car Detailing
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-xl mb-8"
+            >
               Professional care for your car, inside and out.
-            </p>
-            <a
+            </motion.p>
+            <motion.a
               href="/contact"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
               className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md w-[225px] mx-auto"
             >
               Book an Appointment
-            </a>
+            </motion.a>
           </div>
         </section>
 
         {/* Services Section */}
-        <section className="py-10 bg-white px-4">
+        <section className="py-10 bg-white px-4" ref={servicesRef}>
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Our Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               {services.map((service, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="rounded-lg p-6 flex flex-col h-full bg-gradient-to-tr from-[#D6D6D6] to-[#F2F2F2]"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: servicesInView ? 1 : 0,
+                    y: servicesInView ? 0 : 20,
+                  }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <div className="flex justify-between">
                     <h3 className="text-2xl font-semibold mb-4">
@@ -78,7 +118,7 @@ const Home: React.FC = () => {
                   <p className="text-gray-700 text-left">
                     {service.description}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
             <a
@@ -89,35 +129,59 @@ const Home: React.FC = () => {
             </a>
           </div>
         </section>
-
         {/* About Section */}
-        <section className="py-10 px-4">
-          <div className="container mx-auto  text-center">
+        <motion.section
+          className="py-10 px-4"
+          ref={aboutRef}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 20 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">About Us</h2>
             <img
               src="/about-img-2.jpg"
               alt="about us"
               className="rounded-lg mx-auto"
             />
-            <p className=" max-w-2xl mx-auto pt-4">
+            <p className="max-w-2xl mx-auto pt-4">
               At Prestige Car Detailing, we are passionate about cars and
               committed to providing the highest level of service. Our team of
               experienced professionals uses the latest techniques and products
               to ensure your car looks its best.
             </p>
           </div>
-        </section>
+        </motion.section>
 
         {/* Testimonials Section */}
-        <section className="py-10 bg-white px-4">
+        <motion.section
+          className="py-10 bg-white px-4"
+          ref={testimonialsRef}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: testimonialsInView ? 1 : 0,
+            y: testimonialsInView ? 0 : 20,
+          }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold">What Our Clients Say</h2>
             <ReviewsCarousel />
           </div>
-        </section>
+        </motion.section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 px-4">
+        <motion.section
+          id="contact"
+          className="py-20 px-4"
+          ref={contactRef}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: contactInView ? 1 : 0,
+            y: contactInView ? 0 : 20,
+          }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Contact Us</h2>
             <p className="text-gray-700 mb-8">
@@ -126,12 +190,12 @@ const Home: React.FC = () => {
             </p>
             <a
               href="/contact"
-              className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md "
+              className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md"
             >
               Book Now!
             </a>
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );
