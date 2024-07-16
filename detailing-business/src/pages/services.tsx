@@ -56,7 +56,7 @@ const services: Service[] = [
 const Services: React.FC = () => {
   return (
     <div className=" min-h-screen flex flex-col items-center py-5">
-      <div className="bg-white shadow-lg py-5 max-w-6xl w-full  px-4">
+      <div className="py-5  w-full  px-4">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Our Services
         </h1>
@@ -64,7 +64,7 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
+              className="bg-gradient-to-tr from-[#D6D6D6] to-[#F2F2F2] p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
             >
               <div className="mb-4">{service.icon}</div>
               <h2 className="text-2xl font-bold mb-2 text-gray-800">

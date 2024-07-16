@@ -1,7 +1,7 @@
 const Contact: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center py-5">
-      <div className="bg-white shadow-lg  p-8 max-w-6xl w-full ">
+      <div className="px-4 w-full ">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Contact Us
         </h1>

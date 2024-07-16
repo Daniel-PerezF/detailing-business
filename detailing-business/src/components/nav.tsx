@@ -24,12 +24,15 @@ export default function Nav() {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 flex justify-between w-full px-4 pt-2  z-30 from-[#40494F]/95 to-[#5E6973]/95 bg-gradient-to-tr  shadow-md">
+    <nav className="sticky md:relative top-0 flex justify-between w-full px-4 z-30 from-[#40494F]/95 to-[#5E6973]/95 bg-gradient-to-tr  shadow-md">
       <Link to="/" onClick={closeMenu} className="z-20 pt-2 lg:pt-4 pb-1">
-        <div className="flex gap-2">
-          <div className="text-white font-extrabold text-4xl leading-10 hover:scale-105 duration-200 ease-in-out py-1 font-rubik ">
-            Prestige
-            <br className="block lg:hidden" /> Detailing
+        <div className="">
+          <div className="hover:scale-105 duration-200 ease-in-out">
+            <img
+              src="/perstige-2.png"
+              alt=""
+              className="h-16 my-3 md:pb-2 md:my-0"
+            />
           </div>
         </div>
       </Link>
@@ -110,7 +113,7 @@ export default function Nav() {
           </>
         )}
       </AnimatePresence>
-      <ul className="hidden lg:flex gap-5 text-2xl font-medium pt-4 items-centers text-white">
+      <ul className="hidden lg:flex gap-5 text-2xl font-medium pt-4 items-center text-white">
         <li>
           <Link
             to="/"

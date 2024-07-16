@@ -1,7 +1,7 @@
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center py-5">
-      <div className="bg-white shadow-lg  px-8 max-w-6xl w-full py-8">
+    <div className="min-h-screen flex flex-col items-center">
+      <div className="px-4 w-full py-8">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           About Us
         </h1>
@@ -14,7 +14,7 @@ const About: React.FC = () => {
               className="rounded-lg shadow-lg "
             />
           </div>
-          <div>
+          <div className=" text-center lg:text-left pr-0 lg:pr-2">
             <p className="text-gray-600 mb-4">
               We are passionate about providing top-quality mobile car detailing
               services to our customers. With years of experience and dedication

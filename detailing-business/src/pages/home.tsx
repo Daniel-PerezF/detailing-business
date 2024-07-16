@@ -36,8 +36,8 @@ const Home: React.FC = () => {
     },
   ];
   return (
-    <div className="min-h-screen flex flex-col items-center py-5">
-      <div className="   max-w-6xl w-full ">
+    <div className="min-h-screen flex flex-col items-center py-5 ">
+      <div className="w-full ">
         {/* Hero Section */}
 
         <section
@@ -60,14 +60,14 @@ const Home: React.FC = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-10 bg-white">
+        <section className="py-10 bg-white px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Our Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="rounded-lg p-6 flex flex-col h-full"
+                  className="rounded-lg p-6 flex flex-col h-full bg-gradient-to-tr from-[#D6D6D6] to-[#F2F2F2]"
                 >
                   <div className="flex justify-between">
                     <h3 className="text-2xl font-semibold mb-4">
@@ -91,11 +91,15 @@ const Home: React.FC = () => {
         </section>
 
         {/* About Section */}
-        <section className="py-10">
-          <div className="container mx-auto px-6 text-center">
+        <section className="py-10 px-4">
+          <div className="container mx-auto  text-center">
             <h2 className="text-3xl font-bold mb-4">About Us</h2>
-            <img src="/about-img-2.jpg" alt="about us" className="rounded-lg" />
-            <p className="text-gray-700 max-w-2xl mx-auto pt-4">
+            <img
+              src="/about-img-2.jpg"
+              alt="about us"
+              className="rounded-lg mx-auto"
+            />
+            <p className=" max-w-2xl mx-auto pt-4">
               At Prestige Car Detailing, we are passionate about cars and
               committed to providing the highest level of service. Our team of
               experienced professionals uses the latest techniques and products
@@ -105,16 +109,16 @@ const Home: React.FC = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-10 bg-white">
-          <div className="container mx-auto px-6 text-center">
+        <section className="py-10 bg-white px-4">
+          <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold">What Our Clients Say</h2>
             <ReviewsCarousel />
           </div>
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20">
-          <div className="container mx-auto px-6 text-center">
+        <section id="contact" className="py-20 px-4">
+          <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Contact Us</h2>
             <p className="text-gray-700 mb-8">
               Ready to book your detailing appointment? Get in touch with us
