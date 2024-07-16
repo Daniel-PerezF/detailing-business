@@ -36,23 +36,23 @@ const Home: React.FC = () => {
     },
   ];
   return (
-    <div className="min-h-screen flex flex-col items-center py-5 ">
+    <div className="min-h-screen flex flex-col items-center pb-5 ">
       <div className="w-full ">
         {/* Hero Section */}
 
         <section
           className="relative bg-cover bg-center text-white py-20"
-          style={{ backgroundImage: "url(/car-img.jpg)" }}
+          style={{ backgroundImage: "url(/car-img.jpg)", height: "800px" }}
         >
           <div className="absolute inset-0 bg-[#2C343A] bg-opacity-40"></div>
-          <div className="relative container mx-auto px-6 text-center">
+          <div className="relative container mx-auto px-6 text-center flex top-[25%] flex-col">
             <h1 className="text-5xl font-bold mb-4">Premium Car Detailing</h1>
             <p className="text-xl mb-8">
               Professional care for your car, inside and out.
             </p>
             <a
               href="/contact"
-              className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md"
+              className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md w-[225px] mx-auto"
             >
               Book an Appointment
             </a>
@@ -125,10 +125,10 @@ const Home: React.FC = () => {
               today!
             </p>
             <a
-              href="mailto:contact@prestigedetailing.com"
+              href="/contact"
               className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md "
             >
-              Email Us
+              Book Now!
             </a>
           </div>
         </section>

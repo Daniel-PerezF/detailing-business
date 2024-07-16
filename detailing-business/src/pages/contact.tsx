@@ -96,9 +96,7 @@ const Contact: React.FC = () => {
                   d="M12 5v14m0-14V3a9 9 0 00-9 9c0 3.038 1.534 5.75 3.863 7.386a.75.75 0 001.1-.845l-.845-3.379c-.131-.525.289-1.05.845-1.05h5.379c.556 0 .976.525.845 1.05l-.845 3.379a.75.75 0 001.1.845C18.466 17.75 20 15.038 20 12a9 9 0 00-9-9z"
                 />
               </svg>
-              <p className="text-gray-800">
-                123 Car Detailing Street, City, State ZIP
-              </p>
+              <p className="text-gray-800">101 Shine Rd, Sedona, AZ 86336</p>
             </div>
             <div className="flex items-center space-x-4">
               <svg
@@ -116,7 +114,7 @@ const Contact: React.FC = () => {
                 />
               </svg>
               <a href="tel:+1234567890" className="text-gray-800">
-                +1 (234) 567-890
+                +1 (928) 987-4321
               </a>
             </div>
             <div className="flex items-center space-x-4">
@@ -135,7 +133,7 @@ const Contact: React.FC = () => {
                 />
               </svg>
               <a href="mailto:info@cardetailing.com" className="text-gray-800">
-                info@cardetailing.com
+                contact@prestigedetailing.com
               </a>
             </div>
           </div>
