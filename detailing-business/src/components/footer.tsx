@@ -2,11 +2,7 @@ export default function Footer() {
   return (
     <footer className="py-3 flex flex-col font-light from-[#40494F] to-[#5E6973] bg-gradient-to-tr text-white">
       <div className="mx-auto py-2">
-        <img
-          src="/perstige-2.png"
-          alt=""
-          className="h-16 my-3 md:pb-2 md:my-0"
-        />
+        <img src="/prestige.png" alt="" className="h-16 my-3 md:pb-2 md:my-0" />
       </div>
       <ul className="flex-col sm:flex-row flex w-full text-center sm:justify-around  underline underline-offset-2 px-4">
         <li>

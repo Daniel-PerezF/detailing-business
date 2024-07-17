@@ -37,7 +37,7 @@ export default function Nav() {
         <div className="">
           <div className="hover:scale-105 duration-200 ease-in-out">
             <img
-              src="/perstige-2.png"
+              src="/prestige.png"
               alt=""
               className="h-16 my-3 md:pb-2 md:my-0"
               onClick={scrollToTop}
