@@ -8,13 +8,13 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center py-5">
-      <div className="px-4 w-full " ref={contactRef}>
+      <div className="px-4 w-full max-w-6xl" ref={contactRef}>
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Contact Us
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
-            className="flex flex-col"
+            className="flex flex-col items-center md:items-start"
             initial={{ opacity: 0, x: -20 }}
             animate={{
               opacity: contactInView ? 1 : 0,
@@ -25,11 +25,11 @@ const Contact: React.FC = () => {
             <h2 className="text-2xl font-bold mb-2 text-gray-800">
               Get in Touch
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 text-center md:text-left">
               Have a question or want to book an appointment? Fill out the form
               below, and we'll get back to you as soon as possible.
             </p>
-            <form className="flex flex-col space-y-4">
+            <form className="flex flex-col space-y-4 w-full">
               <div className="flex flex-col">
                 <label
                   htmlFor="name"
@@ -80,14 +80,14 @@ const Contact: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="py-2 px-4 bg-[#F17F29] text-white rounded-md transition duration-300"
+                className="py-2 px-4 bg-[#F17F29] text-white rounded-md transition duration-300 hover:bg-[#D96C24]"
               >
                 Send Message
               </button>
             </form>
           </motion.div>
           <motion.div
-            className="flex flex-col space-y-4"
+            className="flex flex-col items-center md:items-start space-y-4"
             initial={{ opacity: 0, x: 20 }}
             animate={{
               opacity: contactInView ? 1 : 0,
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
               <h2 className="text-2xl font-bold mb-2 text-gray-800">
                 Contact Information
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center md:text-left">
                 For inquiries or appointments, you can also reach us through the
                 following:
               </p>

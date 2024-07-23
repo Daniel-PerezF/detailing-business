@@ -136,17 +136,24 @@ const Home: React.FC = () => {
         >
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">About Us</h2>
-            <img
-              src="/about-img-2.jpg"
-              alt="about us"
-              className="rounded-lg mx-auto"
-            />
-            <p className="max-w-2xl mx-auto pt-4">
-              At Prestige Car Detailing, we are passionate about cars and
-              committed to providing the highest level of service. Our team of
-              experienced professionals uses the latest techniques and products
-              to ensure your car looks its best.
-            </p>
+            <div className="flex flex-col lg:flex-row items-center">
+              <img
+                src="/about-img-2.jpg"
+                alt="about us"
+                className="rounded-lg mx-auto lg:mr-8 mb-4 lg:mb-0"
+              />
+              <p className="max-w-2xl mx-auto pt-4 lg:pt-0 text-lg leading-relaxed">
+                Welcome to Prestige Car Detailing, where our passion for cars
+                meets an unwavering commitment to excellence. Our team of
+                skilled professionals utilizes cutting-edge techniques and
+                top-tier products to transform your vehicle, ensuring it looks
+                pristine and feels rejuvenated. At Prestige Car Detailing, we
+                believe in delivering more than just a service—we provide an
+                experience that reflects our dedication to quality and customer
+                satisfaction. Trust us to elevate your car's appearance to its
+                finest state.
+              </p>
+            </div>
           </div>
         </motion.section>
 
