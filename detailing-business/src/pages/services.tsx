@@ -87,7 +87,7 @@ const Services: React.FC = () => {
       </div>{" "}
       <a
         href="/contact"
-        className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md my-5"
+        className="bg-[#F17F29] text-white font-semibold py-3 px-6 rounded-lg shadow-md my-14"
       >
         Book Now!
       </a>
