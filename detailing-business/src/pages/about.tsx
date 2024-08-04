@@ -69,7 +69,6 @@ const About: React.FC = () => {
         </div>
 
         <div className="mb-12">
-          {/* Mission Statement */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{
