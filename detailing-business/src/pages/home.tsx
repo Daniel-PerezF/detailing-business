@@ -157,7 +157,6 @@ const Home: React.FC = () => {
           </div>
         </motion.section>
 
-        {/* Testimonials Section */}
         <motion.section
           className="py-10 bg-white px-4"
           ref={testimonialsRef}
