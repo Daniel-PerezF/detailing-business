@@ -90,7 +90,6 @@ const About: React.FC = () => {
         </div>
 
         <div className="text-center mb-8">
-          {/* Call to Action */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{
