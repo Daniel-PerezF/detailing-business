@@ -90,7 +90,7 @@ const Home: React.FC = () => {
             </motion.a>
           </div>
         </section>
-        {/* Services Section */}
+
         <section className="py-10 bg-white px-4" ref={servicesRef}>
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-12">Our Services</h2>
