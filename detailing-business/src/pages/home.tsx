@@ -56,7 +56,6 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center pb-5 ">
       <div className="w-full ">
-        {/* Hero Section */}
         <section
           className="relative bg-cover bg-center text-white py-20"
           style={{ backgroundImage: "url(/car-img.jpg)", height: "800px" }}
